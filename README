@@ -1,0 +1,25 @@
+This is a short ruby script that downloads songs from your hypem to 
+your local machine. Usage is simple, just run the script with your 
+username as a command line argument. Files will be saved to the present
+working directory. 
+
+Once the program displays your songs for you you must enter which ones 
+you want to download. The format is like so:
+
+"pA-pBsC-sD"
+
+pA-pB - indicates the range of the pages you want to download. Page 2, for
+	example would be "p2-p2". Page 1 to 3 would be "p1-p3".
+
+sC-sD - indicates the range of songs on each page that is visited. Note that
+	each page will hold 20 songs maximum.
+
+A few examples:
+"p3-p3s14-s14" - song 14 on page 3
+"p1-p2s1-s20" - all songs from pages 1 and 2
+"p1-p8s1-s2 - first and second songs on pages 1 to 8
+
+A previous version had a more flexible selection system but it wasn't really
+realistic and I seldom used it.
+
+NOTE: script requires Mechanize

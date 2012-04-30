@@ -115,6 +115,7 @@ end
 agent = Hypem.new
 agent.display_user(ARGV[0])
 
+puts "\n\nPlease enter which songs you'd like to download in the following format: pA-pBsC-sD\nSee README file for more details"
 options = STDIN.gets.chomp.match(/p(\d+)-p(\d+)s(\d+)-s(\d+)/)
 while not options do
 	puts "Invalid input\nTry again:"
